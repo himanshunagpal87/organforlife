@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OrganForLife Foundation — Leave a Legacy of Life</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+<link rel="apple-touch-icon" href="data:image/png;base64,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" />
+<meta name="description" content="The OrganForLife (OFL) Foundation is a grassroots non-profit educating and activating India's youth to pledge their organs. Leave a legacy of life." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream:#faf4f4; --cream2:#f5ece6; --blush:#f9e6e7; --paper:#ffffff;
+    --ink:#181818; --ink2:#232020;
+    --crim:#a31c23; --crim-d:#7e1218; --crim-l:#c8313a;
+    --gold:#c8973c; --gold-l:#e2bd6e;
+    --text:#2c2826; --muted:#7a716c; --line:#ece1db; --line-d:#383232;
+    --radius:18px; --radius-lg:26px;
+    --shadow-sm:0 2px 14px rgba(60,20,20,.06);
+    --shadow:0 24px 60px -24px rgba(80,20,20,.30);
+    --shadow-lg:0 50px 90px -36px rgba(80,15,20,.45);
+    --maxw:1180px;
+    --serif:"Playfair Display",Georgia,serif;
+    --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:120px}
+  body{font-family:var(--sans);color:var(--text);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);line-height:1.1;font-weight:800}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  .eyebrow{display:inline-block;font-family:var(--sans);font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--crim)}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--sans);font-weight:600;font-size:.95rem;padding:.92rem 1.7rem;border-radius:999px;border:0;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s,color .25s;white-space:nowrap}
+  .btn-primary{background:var(--crim);color:#fff;box-shadow:0 14px 28px -12px rgba(163,28,35,.7)}
+  .btn-primary:hover{background:var(--crim-d);transform:translateY(-3px);box-shadow:0 20px 36px -12px rgba(163,28,35,.8)}
+  .btn-light{background:#fff;color:var(--crim)}
+  .btn-light:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .btn-ghost{background:transparent;color:var(--ink)}
+  .btn-ghost:hover{color:var(--crim)}
+  .btn-lg{padding:1.05rem 2rem;font-size:1rem}
+
+  /* ---------- Ticker ---------- */
+  .ticker{background:var(--crim);color:#fde9ea;overflow:hidden;white-space:nowrap;position:relative;font-size:.82rem;border-bottom:1px solid rgba(255,255,255,.12)}
+  .ticker .track{display:inline-flex;gap:0;padding:.55rem 0;animation:scroll 38s linear infinite}
+  .ticker .track span{padding:0 26px;display:inline-flex;align-items:center;gap:10px}
+  .ticker .track span::before{content:"❤";color:var(--gold-l);font-size:.7rem}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .ticker:hover .track{animation-play-state:paused}
+
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:60;background:rgba(250,244,244,.86);backdrop-filter:blur(12px);transition:box-shadow .3s,background .3s;border-bottom:1px solid transparent}
+  header.scrolled{box-shadow:var(--shadow-sm);border-color:var(--line);background:rgba(250,244,244,.95)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--serif);font-weight:800;font-size:1.4rem;color:var(--ink)}
+  .brand .mark{width:38px;height:38px;border-radius:50%;background:var(--crim);display:grid;place-items:center;flex:0 0 auto;box-shadow:0 6px 16px -6px rgba(163,28,35,.7)}
+  .brand .crim{color:var(--crim)}
+  .navlinks{display:flex;align-items:center;gap:2.1rem;list-style:none}
+  .navlinks a{font-family:var(--sans);font-weight:600;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text);position:relative;padding:.3rem 0}
+  .navlinks a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--crim);transition:width .25s}
+  .navlinks a:hover{color:var(--crim)}
+  .navlinks a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:.8rem}
+  .menu-btn{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px}
+  .menu-btn span{display:block;width:23px;height:2px;background:var(--ink);margin:5px auto;border-radius:2px;transition:.3s}
+  .menu-btn.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .menu-btn.open span:nth-child(2){opacity:0}
+  .menu-btn.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;background:linear-gradient(180deg,#faf4f4 0%,#f7eeea 100%);overflow:hidden;padding:80px 0 96px}
+  .hero .watermark{position:absolute;font-family:var(--serif);font-weight:900;font-size:30vw;color:rgba(163,28,35,.04);top:30%;left:50%;transform:translate(-50%,-30%);z-index:0;letter-spacing:-.04em;pointer-events:none;user-select:none}
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
+  .hero h1{font-size:clamp(2.8rem,6vw,4.6rem);font-weight:800;margin:1.1rem 0 1.3rem;letter-spacing:-.01em}
+  .hero h1 em{font-style:italic;color:var(--crim);font-weight:700;display:block}
+  .hero p.sub{font-size:1.12rem;color:var(--text);max-width:480px;margin-bottom:2rem}
+  .hero-actions{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+  .hero-actions .link{font-weight:600;font-size:.95rem;color:var(--ink);display:inline-flex;align-items:center;gap:.4rem;transition:gap .2s,color .2s}
+  .hero-actions .link:hover{color:var(--crim);gap:.7rem}
+  /* hero stat card */
+  .stat-card{position:relative;background:var(--paper);border-radius:var(--radius-lg);padding:34px 30px;box-shadow:var(--shadow-lg);max-width:320px;margin-left:auto}
+  .stat-card .heart{display:flex;justify-content:center;margin-bottom:6px}
+  .sc-stat{text-align:center;padding:18px 0}
+  .sc-stat + .sc-stat{border-top:1px solid var(--line)}
+  .sc-stat b{font-family:var(--serif);font-weight:800;font-size:2.6rem;color:var(--crim);line-height:1;display:block}
+  .sc-stat span{font-size:.86rem;color:var(--muted);display:block;margin-top:4px}
+
+  /* ---------- Section scaffolding ---------- */
+  .section{padding:100px 0}
+  .sec-head{max-width:680px;margin-bottom:56px}
+  .sec-head.center{margin:0 auto 56px;text-align:center}
+  .sec-head h2{font-size:clamp(2.1rem,4.4vw,3.2rem);margin:.7rem 0 1rem}
+  .sec-head p{font-size:1.08rem;color:var(--muted)}
+
+  /* ---------- Mission ---------- */
+  .mission-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+  .feat{display:flex;gap:18px;background:var(--paper);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow-sm);border-left:4px solid var(--crim);margin-bottom:18px;transition:transform .3s,box-shadow .3s}
+  .feat:hover{transform:translateX(6px);box-shadow:var(--shadow)}
+  .feat .fi{flex:0 0 auto;width:46px;height:46px;border-radius:12px;background:#fbe9ea;color:var(--crim);display:grid;place-items:center;font-size:1.3rem}
+  .feat h4{font-family:var(--sans);font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:.25rem}
+  .feat p{font-size:.93rem;color:var(--muted);line-height:1.6}
+  .quote-card{position:relative;background:linear-gradient(150deg,var(--crim),var(--crim-d));color:#fff;border-radius:var(--radius-lg);padding:46px 42px;box-shadow:var(--shadow-lg);overflow:hidden}
+  .quote-card .mark{font-family:var(--serif);font-size:6rem;line-height:.6;color:rgba(255,255,255,.18);position:absolute;top:30px;left:30px}
+  .quote-card blockquote{font-family:var(--serif);font-style:italic;font-size:1.4rem;line-height:1.45;position:relative;margin:30px 0 26px;font-weight:500}
+  .quote-card cite{font-style:normal;font-family:var(--sans);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:#f3c9cb}
+  .quote-card .badge{position:absolute;right:-10px;bottom:26px;background:var(--gold);color:#3a2a08;font-family:var(--sans);font-weight:700;font-size:.78rem;padding:.5rem 1.4rem .5rem 1rem;border-radius:999px 0 0 999px;box-shadow:var(--shadow)}
+
+  /* ---------- Steps ---------- */
+  .steps{background:var(--cream2)}
+  .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:s}
+  .step{background:var(--paper);border-radius:var(--radius-lg);padding:40px 32px;text-align:center;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s}
+  .step:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+  .step .n{width:46px;height:46px;border-radius:50%;background:var(--crim);color:#fff;font-family:var(--serif);font-weight:700;display:grid;place-items:center;margin:0 auto 18px;font-size:1.1rem}
+  .step .ico{font-size:1.7rem;margin-bottom:10px}
+  .step h3{font-family:var(--sans);font-weight:700;font-size:1.2rem;margin-bottom:.6rem;color:var(--ink)}
+  .step p{font-size:.95rem;color:var(--muted)}
+
+  /* ---------- Impact (dark) ---------- */
+  .impact{background:var(--ink);color:#efe7e3}
+  .impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  .impact h2{color:#fff}
+  .impact .lead{color:#c9bdb7;margin:1.2rem 0 1.8rem;font-size:1.05rem}
+  .istack{display:grid;gap:18px}
+  .ibig{background:linear-gradient(150deg,var(--crim),var(--crim-d));border-radius:var(--radius);padding:30px 32px}
+  .ibig b{font-family:var(--serif);font-weight:800;font-size:3rem;color:#fff;line-height:1}
+  .ibig p{color:#f3d3d5;font-size:.92rem;margin-top:.4rem}
+  .irow{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .icard{background:#211d1d;border:1px solid var(--line-d);border-radius:var(--radius);padding:26px}
+  .icard b{font-family:var(--serif);font-weight:800;font-size:2.2rem;color:#fff;line-height:1;display:block}
+  .icard.gold b{color:var(--gold-l)}
+  .icard p{color:#b3a8a2;font-size:.85rem;margin-top:.5rem}
+
+  /* ---------- Journey / Media ---------- */
+  .journey{background:var(--cream)}
+  .video-feature{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;margin-bottom:46px}
+  .video-main{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);background:#000;aspect-ratio:16/9}
+  .video-main iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .watch-list{display:flex;flex-direction:column;gap:16px}
+  .watch{display:flex;gap:16px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+  .watch:hover{transform:translateX(5px);box-shadow:var(--shadow)}
+  .watch .play{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--crim);color:#fff;display:grid;place-items:center;font-size:1.1rem}
+  .watch h4{font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink)}
+  .watch p{font-size:.82rem;color:var(--muted)}
+  /* gallery — masonry columns so nothing is cropped */
+  .gallery{column-count:4;column-gap:14px}
+  .gallery figure{position:relative;border-radius:16px;overflow:hidden;background:#efe2dd;box-shadow:var(--shadow-sm);margin:0 0 14px;break-inside:avoid;-webkit-column-break-inside:avoid;display:inline-block;width:100%}
+  .gallery img{width:100%;height:auto;display:block;transition:transform .6s}
+  .gallery figure:hover img{transform:scale(1.05)}
+  .gallery figcaption{position:absolute;inset:auto 0 0 0;color:#fff;font-size:.78rem;line-height:1.35;background:linear-gradient(transparent,rgba(20,8,8,.92));padding:30px 14px 12px;opacity:0;transition:.3s}
+  .gallery figure:hover figcaption{opacity:1}
+  /* featured-in logos */
+  .featured{margin-top:70px;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:50px 34px;box-shadow:var(--shadow-sm)}
+  .featured .lab{font-family:var(--sans);font-weight:700;font-size:.86rem;letter-spacing:.26em;text-transform:uppercase;color:var(--crim);margin-bottom:32px}
+  .logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:26px}
+  .logos a{display:grid;place-items:center;height:104px;min-width:170px;padding:18px 30px;background:var(--cream);border:1px solid var(--line);border-radius:16px;transition:transform .25s,box-shadow .25s}
+  .logos a:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .logos img{max-height:68px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.75;transition:.3s}
+  .logos a:hover img{filter:none;opacity:1}
+
+  /* ---------- Organs (blush) ---------- */
+  .donate{background:var(--blush)}
+  .organ-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .organ{background:var(--paper);border-radius:var(--radius);padding:28px 22px;text-align:center;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s}
+  .organ:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .organ .ic{font-size:2.1rem;margin-bottom:12px}
+  .organ h4{font-family:var(--sans);font-weight:700;font-size:1.02rem;color:var(--ink);margin-bottom:.35rem}
+  .organ p{font-size:.84rem;color:var(--muted);line-height:1.55}
+
+  /* ---------- Stories ---------- */
+  .stories-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .story{background:var(--paper);border-radius:var(--radius-lg);padding:34px 30px;box-shadow:var(--shadow-sm);position:relative;transition:transform .3s,box-shadow .3s}
+  .story:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .story .q{font-family:var(--serif);font-size:3rem;color:var(--crim);opacity:.25;line-height:.5;height:24px}
+  .story p{font-family:var(--serif);font-style:italic;font-size:1.04rem;color:var(--text);line-height:1.6;margin-bottom:22px}
+  .story .who{display:flex;align-items:center;gap:12px}
+  .story .av{width:42px;height:42px;border-radius:50%;background:var(--crim);color:#fff;font-family:var(--sans);font-weight:700;display:grid;place-items:center;font-size:.95rem}
+  .story .who b{font-family:var(--sans);font-size:.95rem;color:var(--ink);display:block;line-height:1.2}
+  .story .who span{font-size:.8rem;color:var(--muted)}
+  .story .src{display:inline-flex;align-items:center;gap:.3rem;font-family:var(--sans);font-weight:600;font-size:.82rem;color:var(--crim);margin-top:16px}
+  .story .src:hover{text-decoration:underline}
+  .stories-note a{color:var(--crim);font-weight:600}
+  .stories-note a:hover{text-decoration:underline}
+
+  /* ---------- CTA ---------- */
+  .cta{position:relative;background:radial-gradient(900px 500px at 50% -20%,var(--crim-l),var(--crim) 45%,var(--crim-d) 100%);color:#fff;text-align:center;overflow:hidden}
+  .cta .eyebrow{color:#f6cdcf}
+  .cta h2{color:#fff;font-size:clamp(2.2rem,5vw,3.4rem);margin:.8rem auto 1.1rem;max-width:760px}
+  .cta p{color:#fbe2e3;font-size:1.1rem;max-width:560px;margin:0 auto 2rem}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:#b4a9a3;padding:74px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:40px;margin-bottom:46px}
+  footer h4{font-family:var(--sans);color:#fff;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.1rem;font-weight:700}
+  footer a:hover{color:#fff}
+  .foot-links{list-style:none;display:flex;flex-direction:column;gap:.65rem;font-size:.92rem}
+  .foot-brand .brand{color:#fff;margin-bottom:1rem}
+  .foot-brand .brand .crim{color:var(--crim-l)}
+  .foot-brand p{font-size:.92rem;max-width:340px;color:#b4a9a3}
+  .foot-brand .reg{font-size:.82rem;color:#8a7e78;margin-top:1rem}
+  .socials{display:flex;gap:.6rem;margin-top:1.2rem}
+  .socials a{width:40px;height:40px;border-radius:11px;background:#262121;display:grid;place-items:center;transition:.25s}
+  .socials a:hover{background:var(--crim);transform:translateY(-3px)}
+  .foot-bottom{border-top:1px solid var(--line-d);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.84rem;color:#8a7e78}
+  .foot-bottom a{color:var(--crim-l)}
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal[data-d="1"]{transition-delay:.1s}.reveal[data-d="2"]{transition-delay:.2s}.reveal[data-d="3"]{transition-delay:.3s}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:980px){
+    .hero-grid,.mission-grid,.impact-grid,.video-feature{grid-template-columns:1fr;gap:38px}
+    .stat-card{margin:0 auto}
+    .steps-grid,.stories-grid{grid-template-columns:1fr}
+    .gallery{column-count:2}
+    .organ-grid{grid-template-columns:repeat(2,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:760px){
+    .navlinks,.nav-cta .btn{display:none}
+    .menu-btn{display:block}
+    .navlinks.mobile{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--cream);padding:20px 26px;gap:1.2rem;box-shadow:var(--shadow);border-bottom:1px solid var(--line)}
+    .navlinks.mobile a{font-size:.9rem}
+    .navlinks.mobile .pl{color:var(--crim)}
+    .section{padding:70px 0}
+    .logos a{min-width:130px;height:88px;padding:14px 20px}
+    .irow{grid-template-columns:1fr}
+    .quote-card .badge{position:static;border-radius:999px;display:inline-block;margin-top:18px}
+  }
+  @media(max-width:480px){.organ-grid,.foot-grid{grid-template-columns:1fr}.gallery{column-count:1}}
+  .brand-logo{height:44px;width:auto;display:block}
+  @media(max-width:760px){.brand-logo{height:38px}}
+</style>
+</head>
+<body>
+
+<!-- Ticker -->
+<div class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>A new name joins the organ waiting list every 10 minutes</span>
+    <span>15 patients die every day in India waiting for an organ</span>
+    <span>One donor can save up to 8 lives</span>
+    <span>Only ~3,500 transplants are performed each year</span>
+    <span>Over 1 lakh Indians are waiting for a transplant</span>
+    <span>A new name joins the organ waiting list every 10 minutes</span>
+    <span>15 patients die every day in India waiting for an organ</span>
+    <span>One donor can save up to 8 lives</span>
+    <span>Only ~3,500 transplants are performed each year</span>
+    <span>Over 1 lakh Indians are waiting for a transplant</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="OrganForLife home"><img class="brand-logo" src="data:image/png;base64,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" alt="OrganForLife Foundation" /></a>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#mission">Our Mission</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#journey">Our Journey</a></li>
+      <li><a href="#donate">What You Can Donate</a></li>
+      <li><a href="#pledge" class="pl">Pledge Now</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#pledge" class="btn btn-primary">Pledge Now</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="watermark">LIFE</div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">— OrganForLife Foundation, India</span>
+      <h1>Leave a <em>Legacy</em> of Life.</h1>
+      <p class="sub">India faces a critical shortage of organs for transplantation. Our mission is to educate, inspire, and activate the youth of India to pledge their organs — turning one generous act into up to eight saved lives.</p>
+      <div class="hero-actions">
+        <a href="#pledge" class="btn btn-primary btn-lg">❤ Pledge Your Organs</a>
+        <a href="#mission" class="link">Learn more →</a>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="stat-card">
+        <div class="heart">
+          <svg width="84" height="84" viewBox="0 0 100 100" aria-hidden="true">
+            <defs><radialGradient id="hg" cx="40%" cy="35%" r="75%"><stop offset="0%" stop-color="#d23b42"/><stop offset="60%" stop-color="#a31c23"/><stop offset="100%" stop-color="#7e1218"/></radialGradient></defs>
+            <path d="M50 86S12 62 12 36C12 22 23 13 34 14c8 .7 13 6 16 12 3-6 8-11.3 16-12 11-1 22 8 22 22 0 26-38 50-38 50Z" fill="url(#hg)"/>
+            <path d="M30 34c8 1 12-2 15-9" fill="none" stroke="rgba(255,255,255,.45)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="sc-stat"><b data-count="8">0</b><span>lives saved by a single donor</span></div>
+        <div class="sc-stat"><b data-count="1" data-suffix="M+">0</b><span>Indians waiting for a transplant</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission -->
+<section class="section" id="mission">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our Mission</span>
+      <h2>Fighting the Organ Shortage Crisis</h2>
+      <p>The OrganForLife (OFL) Foundation is a grassroots non-profit working to close the catastrophic gap between organ supply and demand in India — through youth-driven awareness.</p>
+    </div>
+    <div class="mission-grid">
+      <div class="reveal">
+        <div class="feat"><div class="fi">⚖️</div><div><h4>Legal &amp; Safe</h4><p>Under the Transplantation of Human Organs Act, 1994, organ donation is fully regulated. The sale of organs is a crime — voluntary donation is the only ethical path to saving lives.</p></div></div>
+        <div class="feat"><div class="fi">🤝</div><div><h4>No Cost to Your Family</h4><p>There is no cost to a donor's family for the donation itself. Transplant-related expenses are borne by the recipient and the medical system.</p></div></div>
+        <div class="feat"><div class="fi">🙏</div><div><h4>Supported by All Faiths</h4><p>Every major religion in India supports or permits organ donation. Giving the gift of life is a universally honoured act of compassion.</p></div></div>
+      </div>
+      <div class="quote-card reveal" data-d="1">
+        <span class="mark">“</span>
+        <blockquote>If we work on organ donation, organ trafficking will reduce — and we will build a better society for people living with organ ailments.</blockquote>
+        <cite>— Adv. Parth Bhatt, on supporting the cause</cite>
+        <span class="badge">★ Est. 2018 · New Delhi, India</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section steps" id="how">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2>Three Simple Steps</h2>
+      <p>Becoming an organ donor is simpler than most people think. Here's how you leave your legacy.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step reveal" data-d="0"><div class="n">1</div><div class="ico">📝</div><h3>Register Your Pledge</h3><p>Fill out the organ-donation pledge form and specify which organs you wish to donate. Your decision is recorded securely in the national registry.</p></div>
+      <div class="step reveal" data-d="1"><div class="n">2</div><div class="ico">💬</div><h3>Inform Your Family</h3><p>Share your decision with your next of kin. Family consent is essential at the time of donation, so make sure your loved ones know and honour your wish.</p></div>
+      <div class="step reveal" data-d="2"><div class="n">3</div><div class="ico">🌱</div><h3>Spread Awareness</h3><p>Share your pledge on social media and encourage friends and community to register. Every conversation you start could save another life.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Impact -->
+<section class="section impact">
+  <div class="wrap impact-grid">
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--gold-l)">Our Impact Since 2018</span>
+      <h2>8 Years of Changing Minds, Saving Lives</h2>
+      <p class="lead">Since our founding in 2018, the OrganForLife Foundation has taken the message of organ donation directly to the people — in schools, colleges, communities, and across digital India. Every conversation we start brings us one step closer to closing the gap.</p>
+      <a href="#pledge" class="btn btn-primary btn-lg">❤ Join the Movement</a>
+    </div>
+    <div class="istack reveal" data-d="1">
+      <div class="ibig"><b data-count="1" data-suffix=" Lakh+">0</b><p>people reached through social-media campaigns, digital drives and online awareness since 2018 — spreading the message across India.</p></div>
+      <div class="irow">
+        <div class="icard"><b data-count="50000" data-suffix="+">0</b><p>met in person at workshops, college events, health fairs &amp; community drives.</p></div>
+        <div class="icard gold"><b data-count="8" data-suffix=" Yrs">0</b><p>on the ground — from 2018 to today, non-stop awareness.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Journey: Photos & Videos -->
+<section class="section journey" id="journey">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Our Journey</span>
+      <h2>Moments, Voices &amp; Films</h2>
+      <p>Talks, webinars, awareness drives and the people who've stood with us — gathered from across our journey.</p>
+    </div>
+
+    <!-- Video feature -->
+    <div class="video-feature">
+      <div class="video-main reveal">
+        <iframe src="https://embed.ted.com/talks/shivam_nagpal_be_someone_s_light" title="TEDx — Be Someone's Light · Shivam Nagpal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      </div>
+      <div class="watch-list reveal" data-d="1">
+        <a class="watch" href="https://www.ted.com/talks/shivam_nagpal_be_someone_s_light" target="_blank" rel="noopener"><span class="play">▶</span><div><h4>TEDx — “Be Someone's Light”</h4><p>Now playing · TEDxSatyawatiCollege</p></div></a>
+        <a class="watch" href="https://www.youtube.com/watch?v=TSbhcsnIazI" target="_blank" rel="noopener"><span class="play">▶</span><div><h4>Social Entrepreneurship &amp; Organ Donation</h4><p>In-conversation feature talk</p></div></a>
+        <a class="watch" href="https://www.instagram.com/organforlifefoundation/" target="_blank" rel="noopener"><span class="play">▶</span><div><h4>Live Sessions &amp; Webinars</h4><p>Our ongoing awareness series — on Instagram</p></div></a>
+        <a class="watch" href="https://www.organforlife.com" target="_blank" rel="noopener"><span class="play">📺</span><div><h4>NDTV — “We The People”</h4><p>Featured with host Gargi Rawat</p></div></a>
+      </div>
+    </div>
+
+    <!-- Photo gallery -->
+    <div class="gallery reveal">
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_c0215d3f4c1740bdbf945934d69baaa7~mv2.jpeg" alt="Founder Shivam Nagpal on NDTV We The People"/><figcaption>On NDTV “We The People” with Gargi Rawat</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_9b26294ad2654143b4675463592d8b72~mv2.jpeg" alt="Talk on eye donation at OP Jindal Global University"/><figcaption>Eye-donation talk · O.P. Jindal Global University</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_a95cae8b36484766ac092582a1080c69f000.jpg" alt="Actor Anuraag Arora supports the cause"/><figcaption>Actor Anuraag Arora supports the cause</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_51aae5b9dc834724b0598863e84d02b7f000.jpg" alt="Col. Ravi Rathore, Arjuna Awardee"/><figcaption>Arjuna Awardee Col. Ravi Rathore</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_009366b773a24b6b99e7d0193d6a04dff000.jpg" alt="Garima Goel speaks on organ and blood donation"/><figcaption>Garima Goel on organ &amp; blood donation</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_8923aed517f74205a3629e9f0fa6cb00f000.jpg" alt="Leena Bhushan with our founder"/><figcaption>Leena Bhushan with our founder</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_0fcdbc0911f64ed4a06abafcab395e40~mv2.jpeg" alt="At a Hans Foundation event"/><figcaption>With Param Pujneeya Mangla Mataji &amp; Bhole Maharaj · Hans Foundation</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_eee9715281bb412b8a8e1eb0de942b70f000.jpg" alt="Ashley Rebello supports the cause"/><figcaption>Designer Ashley Rebello on the noble cause</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_c72af72dd3d1470d975d48f4ac42e34e~mv2.jpeg" alt="Live session on organ donation"/><figcaption>Live session on organ donation</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_4184567e8e574db3b2dd156a908c7682~mv2.jpeg" alt="On-ground awareness drive"/><figcaption>On-ground awareness drive</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_36fa2c558d5542699e286bfb99394a3d~mv2.jpeg" alt="Community webinar"/><figcaption>Community webinar</figcaption></figure>
+      <figure><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_b8e049de1546429fa56d83871330b060~mv2.jpeg" alt="Panel session on donation awareness"/><figcaption>Panel session on awareness</figcaption></figure>
+    </div>
+
+    <!-- Featured in -->
+    <div class="featured reveal">
+      <div class="lab">As Featured In</div>
+      <div class="logos">
+        <a href="https://www.theguardian.com/environment/live/2019/sep/20/climate-strike-global-change-protest-sydney-melbourne-london-new-york-nyc-school-student-protest-greta-thunberg-rally-live-news-latest-updates?page=with:block-5d84bd628f08f9df5bdd81e7#block-5d84bd628f08f9df5bdd81e7" target="_blank" rel="noopener" title="The Guardian"><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_09aae7664ec7490c992d4d85818318d9~mv2.png" alt="The Guardian"/></a>
+        <a href="https://timesofindia.indiatimes.com/home/education/news/young-minds-discuss-key-global-concerns-during-vidmun/articleshow/71924407.cms" target="_blank" rel="noopener" title="The Times of India"><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_cc7dd9763cb64f9d8bc1640560268eac~mv2.png" alt="The Times of India"/></a>
+        <a href="https://www.instagram.com/p/B57fBPYFM1I/?igshid=p89rgxz5b04e" target="_blank" rel="noopener" title="VICE"><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_c08e4965f249413a89588cdb6a5e773c~mv2.png" alt="VICE"/></a>
+        <a href="https://www.instagram.com/p/Bw3v12Qg5IK/?igshid=1oghzkmtor0qr" target="_blank" rel="noopener" title="NDTV"><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_65476e0327114f77b8767f7c376583f1~mv2.jpg" alt="NDTV"/></a>
+        <a href="https://www.instagram.com/p/CTUZ65bl3ws/?utm_medium=copy_link" target="_blank" rel="noopener" title="SVKM&#39;s NMIMS"><img loading="lazy" src="https://static.wixstatic.com/media/4937bc_080d5289b2674003b88a437b04afb3f6~mv2.jpg" alt="SVKM&#39;s NMIMS"/></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Organs & Tissues -->
+<section class="section donate" id="donate">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What You Can Donate</span>
+      <h2>Organs &amp; Tissues</h2>
+      <p>A single person can donate multiple organs and tissues — giving the gift of life to many recipients.</p>
+    </div>
+    <div class="organ-grid">
+      <div class="organ reveal" data-d="0"><div class="ic">❤️</div><h4>Heart</h4><p>Saves the life of someone with end-stage heart failure.</p></div>
+      <div class="organ reveal" data-d="0"><div class="ic">🫁</div><h4>Lungs</h4><p>Help patients with pulmonary disease and cystic fibrosis breathe again.</p></div>
+      <div class="organ reveal" data-d="1"><div class="ic">🧡</div><h4>Liver</h4><p>Can be split to help two recipients simultaneously.</p></div>
+      <div class="organ reveal" data-d="1"><div class="ic">🫘</div><h4>Kidneys</h4><p>The most-needed organ — two per donor means two lives saved.</p></div>
+      <div class="organ reveal" data-d="2"><div class="ic">🩹</div><h4>Pancreas</h4><p>Critical for patients living with Type 1 diabetes.</p></div>
+      <div class="organ reveal" data-d="2"><div class="ic">👁️</div><h4>Eyes / Corneas</h4><p>Restore sight to those living with corneal blindness.</p></div>
+      <div class="organ reveal" data-d="3"><div class="ic">🦴</div><h4>Bone &amp; Tissue</h4><p>Used in reconstructive surgery and healing severe injuries.</p></div>
+      <div class="organ reveal" data-d="3"><div class="ic">🩸</div><h4>Blood &amp; Platelets</h4><p>Living donation — saves lives every single day.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Stories -->
+<section class="section" id="stories">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Stories of Hope</span>
+      <h2>Lives Transformed</h2>
+      <p class="stories-note">Real stories from the organ-donation community — recipients, living donors and families — shared by <a href="https://www.organdonor.gov/learn/life-stories" target="_blank" rel="noopener">organdonor.gov</a>.</p>
+    </div>
+    <div class="stories-grid">
+      <div class="story reveal" data-d="0"><div class="q">“</div><p>There literally is that constant reminder in my chest that I'm here because of someone else.</p><div class="who"><span class="av">A</span><div><b>Adrianne</b><span>Heart recipient · North Carolina</span></div></div><a class="src" href="https://www.organdonor.gov/learn/life-stories/heart-recipient-borrowing-light-donor" target="_blank" rel="noopener">Read Adrianne's story ↗</a></div>
+      <div class="story reveal" data-d="1"><div class="q">“</div><p>People feel like I've taken something out of me, but really I've gained something completely immeasurable that no one can ever take away from me.</p><div class="who"><span class="av">A</span><div><b>Angel</b><span>Living kidney donor · California</span></div></div><a class="src" href="https://www.organdonor.gov/learn/life-stories/altruisic-nurse-proides-living-kidney-donation-to-stranger" target="_blank" rel="noopener">Read Angel's story ↗</a></div>
+      <div class="story reveal" data-d="2"><div class="q">“</div><p>Brandon was a giving person. This was his last gift.</p><div class="who"><span class="av">C</span><div><b>Constance</b><span>Donor family · Michigan</span></div></div><a class="src" href="https://www.organdonor.gov/learn/life-stories/his-last-gift" target="_blank" rel="noopener">Read Brandon's story ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta" id="pledge">
+  <div class="wrap">
+    <span class="eyebrow">Take Action Today</span>
+    <h2>Your Decision Can Change Everything</h2>
+    <p>Join thousands of Indians who have pledged to donate their organs. It costs nothing. It takes five minutes. It saves lives.</p>
+    <a href="https://www.organforlife.com" target="_blank" rel="noopener" class="btn btn-light btn-lg">❤ Pledge Your Organs Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">Organ<span class="crim">ForLife</span></div>
+        <p>A grassroots non-profit dedicated to creating awareness about organ donation across India. We believe every young Indian has the power to save lives.</p>
+        <div class="reg">Registered Non-Profit · India</div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/company/organ-for-life-foundation" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
+          <a href="https://www.facebook.com/organforlifefoundation/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.8-.1-1.6-.15-2.4-.15-2.4 0-4.05 1.46-4.05 4.15v2.3H7.5V13h2.75v8z"/></svg></a>
+          <a href="https://www.instagram.com/organforlifefoundation/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.05.42 2.22.06 1.26.07 1.64.07 4.83s-.01 3.57-.07 4.83c-.05 1.17-.25 1.8-.42 2.22a3.7 3.7 0 0 1-.9 1.38 3.7 3.7 0 0 1-1.38.9c-.42.17-1.06.37-2.23.42-1.25.07-1.63.08-4.85.08s-3.6-.01-4.85-.08c-1.17-.05-1.8-.25-2.23-.42a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.05-.42-2.22C2.21 15.57 2.2 15.19 2.2 12s.01-3.57.07-4.83c.05-1.17.25-1.8.42-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.17 1.06-.37 2.23-.42C8.4 2.2 8.8 2.2 12 2.2z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>About</h4><ul class="foot-links"><li><a href="#mission">Our Mission</a></li><li><a href="#journey">Our Team</a></li><li><a href="#journey">Events</a></li><li><a href="#journey">Press</a></li></ul></div>
+      <div><h4>Learn</h4><ul class="foot-links"><li><a href="#donate">What Is Organ Donation?</a></li><li><a href="#mission">The Legal Framework</a></li><li><a href="#how">How to Pledge</a></li><li><a href="#stories">Stories of Hope</a></li></ul></div>
+      <div><h4>Get Involved</h4><ul class="foot-links"><li><a href="#pledge">Pledge Now</a></li><li><a href="#pledge">Volunteer</a></li><li><a href="#pledge">Donate</a></li><li><a href="https://www.organforlife.com" target="_blank" rel="noopener">Contact</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> OrganForLife Foundation. All rights reserved.</span>
+      <span>Made with ❤ for a better India</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // header shadow
+  const header = document.getElementById('top');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10);
+  onScroll(); addEventListener('scroll', onScroll, {passive:true});
+
+  // mobile menu
+  const menuBtn = document.getElementById('menuBtn'), navlinks = document.getElementById('navlinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navlinks.classList.toggle('mobile');
+    menuBtn.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', open);
+  });
+  navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navlinks.classList.remove('mobile'); menuBtn.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false);
+  }));
+
+  // reveal
+  const ro = new IntersectionObserver((es) => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target);} }), {threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  // counters
+  const fmt = (n) => n>=1000 ? Math.round(n).toLocaleString('en-IN') : Math.round(n).toString();
+  function run(el){
+    const t = +el.dataset.count, suf = el.dataset.suffix || '', dur = 1500, s = performance.now();
+    (function tick(now){
+      const p = Math.min((now-s)/dur,1), e = 1-Math.pow(1-p,3);
+      el.textContent = fmt(t*e) + suf;
+      if(p<1) requestAnimationFrame(tick); else el.textContent = fmt(t) + suf;
+    })(s);
+  }
+  const co = new IntersectionObserver((es) => es.forEach(e => { if(e.isIntersecting){ run(e.target); co.unobserve(e.target);} }), {threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(el => co.observe(el));
+</script>
+</body>
+</html>
